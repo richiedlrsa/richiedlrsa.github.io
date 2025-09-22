@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     async function fetchData() {
         try {
-            const response = await fetch('https://power-outages-scraper.onrender.com/outages/')
+            const response = await fetch('http://127.0.0.1:8000/outages/')
             if (!response.ok) { throw new Error('Could not fetch data.') }
             return await response.json()
         } catch(error) {
